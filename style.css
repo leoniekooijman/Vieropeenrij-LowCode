@@ -1,24 +1,19 @@
-table,
-output {
+table {
   box-shadow: .5vh .5vh 2vh .5vh rgba( 0, 0, 0, .5 );
 }
 table {
-  width: 90vh;
+  width: 500px;
   border-collapse: collapse;
   border: 2vh solid darkolivegreen;
 }
 td {
-  width: calc( 90vh / 7 );
+  width: 300px;
+  height: 150px;
   background: darkolivegreen;
-  cursor: default;
   user-select: none;
+  border-radius: 50%
 }
-td:before {
-  content: "";
-  display: block;
-  width: calc( 90vh / 7 );
-  height: calc( 90vh / 7 );
-  border-radius: 50%;
-  box-shadow: inset .5vh .5vh 2vh .5vh rgba( 0, 0, 0, .5 );
-  background: white;
-}
+
+td:hover {
+    background-color: rgb(55, 70, 30);
+  }
